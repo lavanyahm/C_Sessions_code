@@ -1,14 +1,16 @@
+//Self referal structure
 #include<stdio.h>
 
 struct {
 		int i;
 		char c;
+		
    }x,y;
-
 
 struct EXAMPLE{
 	float f;
 	int i;
+	struct EXAMPLE *link;// self referal structure  
 
 };
 
