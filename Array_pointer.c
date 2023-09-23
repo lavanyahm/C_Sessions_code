@@ -1,7 +1,7 @@
 // C Program to access array elements using pointer
 #include <stdio.h>
 
-void main()
+int main()
 {
 	// Declare an array
 	int val[3] = { 5, 10, 15 };
@@ -16,7 +16,7 @@ void main()
 	printf("Elements of the array are: ");
 
 	printf("%d, %d, %d", ptr[0], ptr[1], ptr[2]);
-
+	return 0;
 
 }
 

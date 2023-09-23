@@ -8,6 +8,7 @@ void main(){
 	printf("Enetr the value of x nad y");
 	scanf("%d%d",&x,&y);
 	swap(&x, &y);
+
 	printf(" the value of x = %d and y= %d", x, y);
 }
 
