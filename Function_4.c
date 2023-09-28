@@ -1,21 +1,26 @@
-//Demo function
+//Implement power function
 
 #include<stdio.h>
-//inline Function proto type
+long power( int, int);
 
-static inline int max(int x, int y)
-
+int main()
 {
 
-        return (x > y)? x:y;
-
+   int base, n;
+   printf("Enter Base value and power value\n");
+   scanf ("%d%d",&base, &n);
+   printf("\n %d to pwer of %d = %ld ",base, n,power(base, n));
+   return 0;
 }
-void main()
+
+long power (int base, int n)
 {
+	long p;
+	for (p=1 ;n > 0; n--)
+	{
+	  p = p *base;
+	}
+	return p;	
 
-	int a =100, b =20;
-	int maximum = max(a,b);
-	printf("\nMaximum = %d\n",maximum);
 }
-
 
